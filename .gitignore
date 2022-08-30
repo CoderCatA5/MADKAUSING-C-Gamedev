@@ -1,2 +1,5 @@
 /.vscode
 /raylib-3.7.0
+
+*.exe
+*.o
