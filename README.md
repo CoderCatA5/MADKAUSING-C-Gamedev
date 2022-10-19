@@ -53,7 +53,7 @@ Bug fixes,better animations/transitions coming in the future.
 - Anushka Gupta
 - Ayush Gupta
 - Vijeth Jain
-- Aruhan Ashwasthi
+- Arihan Ashwasthi
 - Aakarsh Jain
 - Ashutosh Routray
 - Gowri PK
