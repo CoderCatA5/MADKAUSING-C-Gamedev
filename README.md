@@ -13,6 +13,9 @@ Bug fixes,better animations/transitions coming in the future.
 - Incase `GAME.exe` has not been generated and there are messages regarding `skipping incompatible` run `.\scripts\fix_incompat.ps1`.
 - Run `.\scripts\build_game.ps1` once again
 
+- Scripts to install on `linux` OS will be updated shortly ;)
+ 
+
 
 ## HOW TO PLAY
 - The project contains 3 minigames
