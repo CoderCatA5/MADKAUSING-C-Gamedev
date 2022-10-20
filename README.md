@@ -2,7 +2,7 @@
 A minigame collect made using raylib
 
 ## DESCRIPTION
-This was a mini-project made for 2nd Semester of CSE.
+
 The application is a collection of minigames,which are fast,responsive and somewhat bug free.
 Raylib was used to implement GUI,src code in C
 Bug fixes,better animations/transitions coming in the future.
