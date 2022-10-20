@@ -41,7 +41,7 @@ Bug fixes,better animations/transitions coming in the future.
     - include/utils.c
 
 
-## CREDITS
+<!--## CREDITS
 - Ayush Singh
 - Ayushmaan Kaushik
 - Bhavini Madhuranath
@@ -57,3 +57,6 @@ Bug fixes,better animations/transitions coming in the future.
 - Aakarsh Jain
 - Ashutosh Routray
 - Gowri PK
+-->
+
+## Maintainer : [Ayush Singh](https://github.com/CoderCatA5)
