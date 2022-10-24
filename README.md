@@ -60,3 +60,5 @@ Bug fixes,better animations/transitions coming in the future.
 -->
 
 ## Maintainer : [Ayush Singh](https://github.com/CoderCatA5)
+
+## Maintainer : [Ayush Singh](https://github.com/CoderCatA5)
