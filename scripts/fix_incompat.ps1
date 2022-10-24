@@ -25,7 +25,7 @@ cd .\TEMP\
 
 Write-Output "Downloading raylib-3.7.0 from" | Green
 Write-Output "https://github.com/raysan5/raylib/archive/refs/tags/3.7.0.zip" | Yellow
-wget https://github.com/raysan5/raylib/archive/refs/tags/3.7.0.zip -o 3.7.0.zip
+powershell -Command wget https://github.com/raysan5/raylib/archive/refs/tags/3.7.0.zip -o 3.7.0.zip
 
 Write-Output "Extracting files" | Green
 Expand-Archive -Path 3.7.0.zip -DestinationPath .\
@@ -42,4 +42,5 @@ Write-Output "Cleaning up" | Green
 cd ..\..\..\
 rm .\TEMP\ -fo -r
 
+cd $PSScriptRoot
 Write-Output "Done. You can now use build_game.ps1 to generate the .exe file" | Green
