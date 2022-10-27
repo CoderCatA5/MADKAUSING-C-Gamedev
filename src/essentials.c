@@ -141,7 +141,10 @@ void Pong_check_collisions(
     Rectangle blue1,
     Rectangle blue2,
     struct Bricks_pong *bricks)
+
 {
+    Sound bounce = LoadSound("resources/metal-ping.mp3");
+
     if (player1->lives && player2->lives)
     {
         //checks for collisions:
@@ -149,17 +152,20 @@ void Pong_check_collisions(
         {
             ball->velocity.x *= -1;
             player1->lives -= 1;
+            PlaySound(bounce);
         }
         if (CheckCollisionCircleRec(ball->pos, ball->radius, red2))
         {
             ball->velocity.x *= -1;
             player2->lives -= 1;
+            PlaySound(bounce);
         }
 
         if (CheckCollisionCircleRec(ball->pos, ball->radius, blue1) ||
             CheckCollisionCircleRec(ball->pos, ball->radius, blue2))
         {
             ball->velocity.y *= -1;
+            PlaySound(bounce);
         }
 
         //collision logic for sliders
