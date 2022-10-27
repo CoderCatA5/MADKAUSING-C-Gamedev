@@ -145,6 +145,7 @@ void Pong_check_collisions(
 {
     Sound bounce = LoadSound("resources/metal-ping.mp3");
     Sound move = LoadSound("resources/winsquare.mp3");
+    Sound broken = LoadSound("resources/ready-fight.mp3");
 
     if (player1->lives && player2->lives)
     {
@@ -193,6 +194,7 @@ void Pong_check_collisions(
                 ball->velocity.x *= -1;
                 if ((bricks + i)->health == 0)
                     (bricks + i)->is_active = 0;
+                PlaySound(broken);
             }
         }
         //player2->rect.y=ball->pos.y;
