@@ -144,6 +144,7 @@ void Pong_check_collisions(
 
 {
     Sound bounce = LoadSound("resources/metal-ping.mp3");
+    Sound move = LoadSound("resources/winsquare.mp3");
 
     if (player1->lives && player2->lives)
     {
@@ -173,11 +174,13 @@ void Pong_check_collisions(
         {
             ball->velocity.x *= -1;
             ball->velocity.y = (ball->pos.y - (player1->rect.y + (176 / 2))) / (player2->rect.height / 2) * 5;
+            PlaySound(move);
         }
         if (CheckCollisionCircleRec(ball->pos, ball->radius, player2->rect))
         {
             ball->velocity.x *= -1;
             ball->velocity.y = (ball->pos.y - (player2->rect.y + (176 / 2))) / (player2->rect.height / 2) * 5;
+            PlaySound(move);
         }
 
         //colission logic for bricks
